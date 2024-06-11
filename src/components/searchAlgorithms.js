@@ -119,6 +119,14 @@ async function BreadthFirstSearch(
       await new Promise((resolve) => setTimeout(resolve, delay));
     }
   }
+  if (batchUpdates.length > 0) {
+        const newGrid = grid.slice();
+        for (const [row, col] of batchUpdates) {
+          newGrid[row][col].isVisited = true;
+        }
+        setGrid(newGrid);
+        await new Promise((resolve) => setTimeout(resolve, delay));
+  }
 }
 
 async function DepthFirstSearch(
@@ -440,6 +448,14 @@ async function Dijkstra(
       await new Promise((resolve) => setTimeout(resolve, delay));
     }
   }
+  if (batchUpdates.length > 0) {
+        const newGrid = grid.slice();
+        for (const [row, col] of batchUpdates) {
+          newGrid[row][col].isVisited = true;
+        }
+        setGrid(newGrid);
+        await new Promise((resolve) => setTimeout(resolve, delay));
+      }
 }
 
 export { BreadthFirstSearch, DepthFirstSearch, Dijkstra };
