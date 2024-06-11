@@ -1,0 +1,82 @@
+.navbar {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+select {
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+button {
+  width: 100px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+
+button.search {
+  background: #81ff629b;
+}
+
+button.buildMaze {
+  background: rgb(7, 65, 91);
+}
+
+button.clear {
+  background: #d13535;
+}
+
+@media (max-width: 650px) {
+  select#speed,
+  button {
+    width: 80px;
+  }
+
+  select#maze {
+    width: 130px;
+  }
+
+  select,
+  button {
+    font-size: 8px;
+    margin: 0px;
+  }
+  .navbar {
+    gap: 5px;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 650.1px) and (max-width: 855px) {
+  select#speed,
+  button {
+    width: 100px;
+  }
+
+  select#maze {
+    width: 150px;
+  }
+
+  select,
+  button {
+    font-size: 12px;
+    margin: 0px;
+  }
+
+  .navbar {
+    gap: 5px;
+    padding: 5px;
+  }
+}

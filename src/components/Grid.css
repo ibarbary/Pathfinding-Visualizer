@@ -1,0 +1,87 @@
+.grid {
+  padding: 15px;
+  height: 90vh;
+  display: grid;
+}
+
+.cell {
+  border: 1px solid lightblue;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  user-select: none;
+  align-items: center;
+}
+
+@keyframes cell-animation {
+  0% {
+    transform: scale(0.3);
+    background-color: #f0f;
+    border-radius: 100%;
+  }
+
+  50% {
+    transform: scale(0.5);
+    background-color: rgba(10, 55, 95, 0.75);
+    border-radius: 75%;
+  }
+  75% {
+    transform: scale(0.7);
+    background-color: rgba(20, 110, 140, 0.75);
+    border-radius: 50%;
+  }
+  100% {
+    transform: scale(1);
+    background-color: rgba(30, 165, 185, 0.75);
+    border: 1px solid rgb(222, 214, 214);
+    border-radius: 0%;
+  }
+}
+
+@keyframes path-animation {
+  0% {
+    transform: scale(0.3);
+    background-color: rgba(10, 55, 95, 0.75);
+    border-radius: 100%;
+  }
+
+  50% {
+    transform: scale(0.5);
+    background-color: rgba(20, 110, 140, 0.75);
+    border-radius: 75%;
+  }
+  75% {
+    transform: scale(0.7);
+    background-color: rgba(10, 55, 95, 0.75);
+    border-radius: 50%;
+  }
+  100% {
+    transform: scale(1);
+    background-color: yellow;
+    border-radius: 0%;
+  }
+}
+
+@keyframes wall-animation {
+  0% {
+    transform: scale(0.3);
+    background-color: rgba(30, 165, 185, 0.75);
+    border-radius: 100%;
+  }
+
+  50% {
+    transform: scale(0.5);
+    background-color: rgba(20, 110, 140, 0.75);
+    border-radius: 75%;
+  }
+  75% {
+    transform: scale(0.7);
+    background-color: rgba(10, 55, 95, 0.75);
+    border-radius: 50%;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #022433;
+    border-radius: 0%;
+  }
+}
