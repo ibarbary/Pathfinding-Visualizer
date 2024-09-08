@@ -318,8 +318,6 @@ async function Dijkstra(
   while (cellArray.length > 0) {
     let minIndex = 0;
 
-    for (let i = 0; i < cellArray.length; ++i) {
-      let minIndex = 0;
       for (let i = 1; i < cellArray.length; i++) {
         if (
           cellCostToVisitFromStart.get(
@@ -332,7 +330,7 @@ async function Dijkstra(
           minIndex = i;
         }
       }
-    }
+    
 
     const [currRow, currCol] = cellArray[minIndex];
     const currCellCost = cellCostToVisitFromStart.get(`${currRow},${currCol}`);
